@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity="center"
+
+    tools:context="com.sterling.game.activity.MainActivity">
+
+<LinearLayout
+    android:id="@+id/controls"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <Button
+android:layout_marginTop="10sp"
+        android:id="@+id/startBtn"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="@drawable/playsilver"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:layout_weight=".15"
+        android:id="@+id/imageView"
+        android:layout_width="237dp"
+        android:layout_height="80sp"
+
+        android:src="@drawable/pigpedestal" />
+
+    <Button
+android:layout_marginTop="10sp"
+        android:id="@+id/resetBtn"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="@drawable/resetsilver"
+
+        android:clickable="true"
+        />
+
+</LinearLayout>
+
+    <GridView
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/controls"
+        android:id="@+id/gridview"
+        android:animateLayoutChanges="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" >
+
+
+</GridView>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridview"
+        >
+        <ImageView
+            android:src="@drawable/greentrophy"
+            android:layout_width="140sp"
+            android:layout_height="150sp" />
+        <TextView
+            android:id="@+id/score_pig1"
+            android:layout_weight="5"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/dar_green"/>
+
+        <ImageView
+
+            android:src="@drawable/bluetrophy"
+            android:layout_width="150sp"
+            android:layout_height="150sp" />
+
+        <TextView
+            android:gravity="right"
+            android:id="@+id/score_pig2"
+            android:layout_weight="5"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

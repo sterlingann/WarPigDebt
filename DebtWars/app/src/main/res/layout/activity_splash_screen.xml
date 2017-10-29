@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.SplashScreen"
+    android:layout_centerHorizontal="true"
+
+    >
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="100sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textSize="50sp"
+        android:text="DebtWars" />
+    <TextView
+        android:textStyle="italic"
+        android:layout_marginTop="150sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="© Sterling Ingwers" />
+    <TextView
+        android:layout_marginTop="200sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="Let the robo-pigs race for the optimal path towards your financial freedom!" />
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+
+        <ImageView
+            android:id="@+id/EditText"
+            android:layout_width="fill_parent"
+          android:src="@drawable/silversplashpig"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
